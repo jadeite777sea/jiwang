@@ -1104,22 +1104,22 @@ int main()
 
 	cout << "接收数据所使用时间：" << 298 << "ms" << endl;
 
-	//for (int i = 0; i < 3; i++)
-	//{
-	//	kill = 0;
-	//	is_reset = 0;
-	//	based = base;
-	//	count_photo = 0;
-	//	//清理滑动窗口
-	//	for (int j = 0; j < 8; j++)
-	//	{
-	//		delete[] my_window[j];
-	//		my_window[j] = NULL;
-	//	}
+	for (int i = 0; i < 3; i++)
+	{
+		kill = 0;
+		is_reset = 0;
+		based = base;
+		count_photo = 0;
+		//清理滑动窗口
+		for (int j = 0; j < 8; j++)
+		{
+			delete[] my_window[j];
+			my_window[j] = NULL;
+		}
 
-	//	send_photo_gbn(photo_file[i], clientSocket, addrc, dstAddr, 0.03);
-	//	++photo_index;
-	//}
+		send_photo_gbn(photo_file[i], clientSocket, addrc, dstAddr, 0.03);
+		++photo_index;
+	}
 
 	
 	kill = 0;
